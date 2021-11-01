@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import punisherPoster from "./imageInSrc.jpg";
+import ReactPlayer from "react-player";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div>
+        <img src="/imageInPublic.jpg" alt="Punisher logo" />
+      </div>
+      <div>
+        <h1 style={{ align: "middle" }}>The Punisher - series</h1>
+      </div>
+      <div>
+        <img src={punisherPoster} alt="Punisher poster"></img>
+      </div>
+      <ReactPlayer url="https://www.youtube.com/watch?v=jrLhP5sK2wI&ab_channel=Netflix" />
     </div>
   );
 }
